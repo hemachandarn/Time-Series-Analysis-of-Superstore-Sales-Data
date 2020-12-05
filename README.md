@@ -88,14 +88,23 @@ This mainly involves the analysis of `Sales` across the `Order Date`. We first p
 
 <img src = "https://github.com/HemachandarN/Time-Series-Analysis-of-Superstore-Sales-Data/blob/main/Images/6.JPG">
 
+### **Data Preprocessing**
 
-### **Regression Models**
+- Remove missing values as they have no meaning.
+- Convert the time based columns which are as `Objects` into `datetime` formats.
+- The trend of the sales data should be stationary for time series models. In order to do that we can use first log difference of the sales data for the time series model to get better results. 
 
-Sentiment Analysis is used to systematically identify, extract, quantify, and study affective states and subjective information. This analysis basically gives out the emotion behind the customer review in the form of a polarity score. Polarity is nothing but a float that lies between -1 to 1. This tells us whether the review is positive, negative or neutral. We classify each of the reviews using this the polarity score into these three categories. 
+### **Forecastinng Models**
 
-### **Time Series Models** 
+For forecasting the models we chose two approaches
+- Regression Models
+- Time Serie Models 
 
-Based on the detailed analysis on the customer review text data and other numerical, binary and categorical data we build our classification models. The target variable here as mentioned above is whether the customer will recommend the product or not. We have used 4 models Decision Tree, Logistic Regression, Support Vector Machine and Naive Bayes. The metrics for the Logistics regression model were the best.  
+#### **Regression Models**
+
+#### **Time Series Models**
+
+
 
 
 ## **Who might be interested in this data**
