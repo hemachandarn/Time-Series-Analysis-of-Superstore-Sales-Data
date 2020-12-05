@@ -1,10 +1,6 @@
 # Time-Series-Analysis-of-Superstore-Sales-Data
 Perform EDA and build a forecast model using the Superstore sales data 
 
-
-# Women's E-Commerce-Clothing-Reviews
-Analyzing Customer reviews using Text Mining to classify whether they will recommend a product or not. 
-
 ## **Abstract**
 
 Customer feedback is a crucial source of information describing user experience with a company and its service. Just like in product development, efficient use of feedback can help identify and prioritize opportunities for company’s further development.
