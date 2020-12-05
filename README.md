@@ -139,13 +139,13 @@ Forecasting the sales could offer tremendoud insights of how the store is doing 
 
 ## **Challenges Faced**
 
-1. The main challenge was the text preprocessing to get clean text data out. 
-2. Feature selection; Feature selection here was mainly done by correlation. Doing feature selection using supervised learning algorithms would have got us better model metrics. 
-3. Repetition of products; The 23,000 customer reviews were mainly focussed towards 1206 products. 
-4. Title column; We tried to use it for our analysis, but we were not able to use it in the end. 
+1. The main challenge was deciding the time format to forecast whether use forecast daily, monthly or yearly. Yearly was out of option as only 4 years were given. Averaging the sales on a monthly basis and forecasting would have given a different reult may be even better result.  
+2. Feature selection for the regression models. 
+3. Parameter tuning for the time series models were difficult. For example If you take ARIMA model once you get p,d,q. You have to try all the different combinations as possible to get the best model.   
+4. Including holidays in FBProphet was difficult though the data was international we have used American holidays for the model. 
 
 ## **Limitations**
 
 - Analyzing the Impact of Single Events: When you try to assess the impact of a single event, the major problem is that there are always many events occurring at any one time. Suppose you want to find out why sales are peaking  in the March for all the four years. But there are several events happening at the same time. 
 - Missing values need to be filled
-- Past performance is no indication of future results there are numrous factors that might affect the sales of the store. We can't decide the future based on just patterns. 
+- Past performance is no indication of future results there are numrous factors that might affect the sales of the store. We can't decide the future based on just patterns. The retail market is so dynamic and often affected by new products, promotions, seasonality and other changes that make it very hard to base forward-looking decisions on past behavior. This is the reason why personal experience, local knowledge, and expert judgement are often used as critical inputs to override automated forecasting 
