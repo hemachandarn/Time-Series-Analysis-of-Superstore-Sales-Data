@@ -115,6 +115,7 @@ We have used two types of regression to predict `Sales`.
 
 #### **Time Series Models**
 
+**Reason:** We wanted to find out how sales was affect by other factors for the Superstore. Whether it was due to the region, product category or may be due to a group of customers. Forecasting Sales based using regression will give us the extra bit of information which businesses can use for further analysis.
 
 ##### **Autoregressive Integrated Moving Average (ARIMA)**
 
@@ -124,9 +125,13 @@ The Autoregressive Integrated Moving Average (ARIMA) method models the next step
 
 The Seasonal Autoregressive Integrated Moving-Average with Exogenous Regressors (SARIMAX) is an extension of the SARIMA model that also includes the modeling of exogenous variables.Exogenous variables are also called covariates and can be thought of as parallel input sequences that have observations at the same time steps as the original series. The primary series may be referred to as endogenous data to contrast it from the exogenous sequence(s). The observations for exogenous variables are included in the model directly at each time step and are not modeled in the same way as the primary endogenous sequence (e.g. as an AR, MA, etc. process).The SARIMAX method can also be used to model the subsumed models with exogenous variables, such as ARX, MAX, ARMAX, and ARIMAX.
 
-##### **Facebook Prophet
+##### **Facebook Prophet**
 
 Prophet is a procedure for forecasting time series data based on an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality, plus holiday effects. The procedure makes use of a decomposable time series model with three main model components: trend, seasonality, and holidays. Similar to a generalized additive model (GAM), with time as a regressor, Prophet fits several linear and non-linear functions of time as components. Modeling seasonality as an additive component is the same approach taken by exponential smoothing… The GAM formulation has the advantage that it decomposes easily and accommodates new components as necessary, for instance when a new source of seasonality is identified. Prophet is “framing the forecasting problem as a curve-fitting exercise” rather than looking explicitly at the time based dependence of each observation.
+
+## **Model Comparison**
+
+
 
 ## **Who might be interested in this data**
 
