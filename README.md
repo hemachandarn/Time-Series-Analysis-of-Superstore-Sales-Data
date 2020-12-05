@@ -14,7 +14,7 @@ Our main objective is to analyze the time series data in order to extract meanin
 
 ## **Methodology** 
 
-<img src = "https://github.com/HemachandarN/Women-s-E-Commerce-Clothing-Reviews/blob/master/Data/Process_Outline.PNG">
+<img src = "https://github.com/HemachandarN/Time-Series-Analysis-of-Superstore-Sales-Data/blob/main/Images/Process_outline.JPG">
 
 ## **Data Source**<br>
 ### **Kaggle**<br>
@@ -65,7 +65,22 @@ Columns | Definition |
 
 ### **Exploratory Data Analysis**
 
-In this starting stage we analyze each of the features in the dataset. Mainly the relevant ones; continuous columns Age and Positive Feedback; Binary Column Recommendations IND and Categorical Columns Rating, Department Name, Class Name and Division Name. Here we generally use summary statistics and visualizations to gain insights on the features and generate our hypotheses for the dataset. Then we do Bivariate analysis where we do the same thing as above with two variables to check whether they have any empirical relationship between them. 
+In this starting stage we analyze each of the features in the dataset. Mainly the relevant ones; `Ship Mode`, `Segment`, `Country`, `City`, `State`, `Region`, `Category` and `Sub-Category` for Univariate analysis.  Here we generally use summary statistics and visualizations to gain insights on the features and generate our hypotheses for the dataset. Then we do Bivariate analysis where we do the same thing as above with two variables to check whether they have any empirical relationship between them. 
+
+#### **Visualizations from EDA**
+
+Some of the visualizations from the analysis are shown below. A more detailed version can be found with the code. 
+
+<img src = "https://github.com/HemachandarN/Time-Series-Analysis-of-Superstore-Sales-Data/blob/main/Images/1.JPG">
+
+<img src = "https://github.com/HemachandarN/Time-Series-Analysis-of-Superstore-Sales-Data/blob/main/Images/2.JPG">
+
+<img src = "https://github.com/HemachandarN/Time-Series-Analysis-of-Superstore-Sales-Data/blob/main/Images/3.JPG">
+
+<img src = "https://github.com/HemachandarN/Time-Series-Analysis-of-Superstore-Sales-Data/blob/main/Images/4.JPG">
+
+<img src = "https://github.com/HemachandarN/Time-Series-Analysis-of-Superstore-Sales-Data/blob/main/Images/5.JPG">
+
 
 ### **Time Series Analysis** 
 
