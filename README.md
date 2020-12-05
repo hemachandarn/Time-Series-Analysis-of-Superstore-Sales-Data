@@ -96,7 +96,7 @@ This mainly involves the analysis of `Sales` across the `Order Date`. We first p
 
 ### **Forecastinng Models**
 
-For forecasting the models we chose two approaches
+For forecasting `Sales` we chose two approaches
 - Regression Models
 - Time Serie Models 
 
