@@ -107,13 +107,26 @@ Regression model is a set of statistical processes for estimating the relationsh
 **Reason:** We wanted to find out how sales was affect by other factors for the Superstore. Whether it was due to the region, product category or may be due to a group of customers. Forecasting Sales based using regression will give us the extra bit of information which businesses can use for further analysis.  
 
 We have used two types of regression to predict `Sales`. 
-- Linear Regression  
-- Polynomical Regression
+- **Linear Regression** is based on the assumption that there is a linear relationship between both the dependent and independent variables. It also assumes that there is no major correlation between the independent variables. Multi Linear regressions can be linear and nonlinear. It has one y and two or more x variables or one dependent variable and two or more independent variables 
+
+- **Polynomical Regression** is a one of the types of linear regression in which the relationship between the independent variable x and dependent variable y is modeled as an nth degree polynomial. Polynomial regression fits a nonlinear relationship between the value of x and the corresponding conditional mean of y, denoted E (y |x).
+
+**Y=θo + θ₁X + θ₂X² + … + θₘXᵐ + residual error**
 
 #### **Time Series Models**
 
 
+##### **Autoregressive Integrated Moving Average (ARIMA)**
 
+The Autoregressive Integrated Moving Average (ARIMA) method models the next step in the sequence as a linear function of the differenced observations and residual errors at prior time steps.It combines both Autoregression (AR) and Moving Average (MA) models as well as a differencing pre-processing step of the sequence to make the sequence stationary, called integration (I). The notation for the model involves specifying the order for the AR(p), I(d), and MA(q) models as parameters to an ARIMA function, e.g. ARIMA(p, d, q). An ARIMA model can also be used to develop AR, MA, and ARMA models.
+
+##### **Seasonal Autoregressive Integrated Moving-Average with Exogenous Regressors (SARIMAX)**
+
+The Seasonal Autoregressive Integrated Moving-Average with Exogenous Regressors (SARIMAX) is an extension of the SARIMA model that also includes the modeling of exogenous variables.Exogenous variables are also called covariates and can be thought of as parallel input sequences that have observations at the same time steps as the original series. The primary series may be referred to as endogenous data to contrast it from the exogenous sequence(s). The observations for exogenous variables are included in the model directly at each time step and are not modeled in the same way as the primary endogenous sequence (e.g. as an AR, MA, etc. process).The SARIMAX method can also be used to model the subsumed models with exogenous variables, such as ARX, MAX, ARMAX, and ARIMAX.
+
+##### **Facebook Prophet
+
+Prophet is a procedure for forecasting time series data based on an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality, plus holiday effects. The procedure makes use of a decomposable time series model with three main model components: trend, seasonality, and holidays. Similar to a generalized additive model (GAM), with time as a regressor, Prophet fits several linear and non-linear functions of time as components. Modeling seasonality as an additive component is the same approach taken by exponential smoothing… The GAM formulation has the advantage that it decomposes easily and accommodates new components as necessary, for instance when a new source of seasonality is identified. Prophet is “framing the forecasting problem as a curve-fitting exercise” rather than looking explicitly at the time based dependence of each observation.
 
 ## **Who might be interested in this data**
 
