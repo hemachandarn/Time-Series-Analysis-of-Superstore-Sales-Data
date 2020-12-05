@@ -84,7 +84,10 @@ Some of the visualizations from the analysis are shown below. A more detailed ve
 
 ### **Time Series Analysis** 
 
-This involves a lot of steps. Analyzing the data that has not been carefully screened will lead to bad results. We need to prepare the data for the analysis and data preprocessing is the way. This process involves handling missing values, Removing outliers that are not useful and may skew the data, removing redundant features that are not useful for our analysis, encoding categorical variables, balancing the dataset and finally feature selection. 
+This mainly involves the analysis of `Sales` across the `Order Date`. We first plot the sales across the different perdiod available in order to understand the trend and seasonality. Then we split the date into month and year and calculated the mean `Sales` for each month across the different years. Below you can a see the `Sales` trend across different months for each year present in the data. 
+
+<img src = "https://github.com/HemachandarN/Time-Series-Analysis-of-Superstore-Sales-Data/blob/main/Images/6.JPG">
+
 
 ### **Regression Models**
 
