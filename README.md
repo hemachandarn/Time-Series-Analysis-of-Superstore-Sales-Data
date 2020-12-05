@@ -104,18 +104,18 @@ For forecasting `Sales` we chose two approaches
 
 Regression model is a set of statistical processes for estimating the relationships between a dependent variable (`Sales` in our case) and one or more independent variables (`Segment`, `Country`, `State` etc.).
 
-**Reason:** We wanted to find out how sales was affect by other factors for the Superstore. Whether it was due to the region, product category or may be due to a group of customers. Forecasting Sales based using regression will give us the extra bit of information which businesses can use for further analysis.  
+**Reason:** We wanted to find out how sales was affected by other factors in the dataset. Whether it was due to the region, product category or may be due to a group of customers. Forecasting Sales based using regression will give us the extra bit of information which businesses can use for further analysis.  
 
 We have used two types of regression to predict `Sales`. 
 - **Linear Regression** is based on the assumption that there is a linear relationship between both the dependent and independent variables. It also assumes that there is no major correlation between the independent variables. Multi Linear regressions can be linear and nonlinear. It has one y and two or more x variables or one dependent variable and two or more independent variables 
 
 - **Polynomical Regression** is a one of the types of linear regression in which the relationship between the independent variable x and dependent variable y is modeled as an nth degree polynomial. Polynomial regression fits a nonlinear relationship between the value of x and the corresponding conditional mean of y, denoted E (y |x).
 
-**Y=θo + θ₁X + θ₂X² + … + θₘXᵐ + residual error**
+ **Y=θo + θ₁X + θ₂X² + … + θₘXᵐ + residual error**
 
 #### **Time Series Models**
 
-**Reason:** We wanted to find out how sales was affect by other factors for the Superstore. Whether it was due to the region, product category or may be due to a group of customers. Forecasting Sales based using regression will give us the extra bit of information which businesses can use for further analysis.
+**Reason:** Time is the most important independent variable in any prediction of something that happens in the future. Time series models use information regarding historical values and associated patterns to predict future activity.  
 
 ##### **Autoregressive Integrated Moving Average (ARIMA)**
 
@@ -146,8 +146,6 @@ Forecasting the sales could offer tremendoud insights of how the store is doing 
 
 ## **Limitations**
 
-The analysis mainly focuses on the reviews and ratings given by a customer and how it plays a role in their recommendation for that product. But there can be other reasons involved in the recommendation like sale details of the product like price, delivery date, quality( they would have got something different from what they saw online). The lack of information on the impact of brand loyalty and brand likeliness affected by competition from other retailers as we do not have data about them as well.
-
-The analysis could be improved if the products are segregated by sellers and particular products. Because this is real commercial data, it has been anonymized, and references to the company in the review text and body have been replaced with “retailer”. Including the price column will also be very helpful as mentioned. 
-
-
+- Analyzing the Impact of Single Events: When you try to assess the impact of a single event, the major problem is that there are always many events occurring at any one time. Suppose you want to find out why sales are peaking  in the March for all the four years. But there are several events happening at the same time. 
+- Missing values need to be filled
+- Past performance is no indication of future results there are numrous factors that might affect the sales of the store. We can't decide the future based on just patterns. 
