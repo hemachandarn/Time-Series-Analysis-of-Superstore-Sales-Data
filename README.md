@@ -3,15 +3,13 @@ Perform EDA and build a forecast model using the Superstore sales data
 
 ## **Abstract**
 
-Customer feedback is a crucial source of information describing user experience with a company and its service. Just like in product development, efficient use of feedback can help identify and prioritize opportunities for company’s further development.
+Time series analysis deals with time series based data to extract patterns for predictions and other characteristics of the data. It uses a model for forecasting future values in a small time frame based on previous observations. It is widely used for non-stationary data, such as economic data, weather data, stock prices, and retail sales forecasting.
 
-This readme describes how the code for our Text Analysis and Classification Model works.
+This readme describes how the code for our Time Series Analysis and forecasting model works.
 
 ## **Obejective** 
 
-In our analysis, we will utilize the power of text mining to do an in-depth analysis of customer reviews on an e-commerce clothing site data and build a classification model to predict whether the customer will recommend the product or not.
-
-It will help retailers to have an understanding about their products, mistakes and customer satisfaction.
+Our main objective is to analyze the time series data in order to extract meaningful statistics and other characteristics of the data and then build a Time series forecasting model to predict future values based on previously observed values.
 
 
 ## **Methodology** 
@@ -20,42 +18,21 @@ It will help retailers to have an understanding about their products, mistakes a
 
 ## **Data Source**<br>
 ### **Kaggle**<br>
-Link: https://www.kaggle.com/nicapotato/womens-ecommerce-clothing-reviews<br>
+Link: https://www.kaggle.com/rohitsahoo/sales-forecasting<br>
 
 ## **Libraries Used**
-import pandas as pd<br>
-import numpy as np<br>
-from scipy import stats<br>
-import string<br>
-import seaborn as sns<br>
-import matplotlib.pyplot as plt<br>
-import matplotlib.gridspec as gridspec<br>
-from sklearn.model_selection import train_test_split as split<br>
-from sklearn import metrics<br> 
-from sklearn.metrics import classification_report, confusion_matrix, auc, roc_curve<br>
-import nltk<br>
-from nltk.corpus import stopwords<br>
-from nltk.tokenize import sent_tokenize, word_tokenize, RegexpTokenizer <br>
-from nltk.stem import PorterStemmer, LancasterStemmer<br>
-from sklearn.feature_extraction.text import CountVectorizer<br>
-from sklearn.feature_extraction.text import TfidfTransformer<br>
-from nltk.tokenize import word_tokenize<br>
-from nltk.probability import FreqDist<br>
-import spacy<br>
-import re<br>
-from wordcloud import WordCloud<br>
-from imblearn.over_sampling import SMOTE<br>
-from nltk.stem.snowball import SnowballStemmer<br>
-from nltk.sentiment.vader import SentimentIntensityAnalyzer<br>
-from sklearn.tree import DecisionTreeClassifier<br>
-from sklearn.linear_model import LogisticRegression<br>
-from sklearn.naive_bayes import GaussianNB<br>
-from sklearn import svm<br>
-from sklearn.metrics import f1_score, precision_score, recall_score, accuracy_score<br>
-import warnings<br>
-warnings.filterwarnings('ignore') <br>
-from IPython.display import Image<br>
-%matplotlib inline<br>
+- Pandas<br>
+- Numpy<br>
+- Stats<br>
+- Seaborn<br>
+- Matplotlib<br>
+- Sklearn.model_selection<br>
+- Sklearn Metrics<br>
+- Sklearn.pipeline<br>
+- Sklearn.preprocessing<br>
+- Sklearn.model_selection
+- Statsmodels.tsa.arima_model 
+- Fbprophet
 
 ## Column information 
 
@@ -63,17 +40,27 @@ We have a review dataset of 23486 rows and 10 columns of data. The feature varia
 
 Columns | Definition |
  --- | --- |
- Clothing ID  							                   |Integer Categorical variable that refers to the specific piece being reviewed
- Age 					           |Positive Integer variable of the reviewers age
- Title 		        |String variable for the title of the review
- Review Text  					               	   	|String variable for the review body
- Rating							                	      |String variable for the review body 
- Recommended IND  					                	|Binary variable stating where the customer recommends the product where 1 is recommended, 0 is not recommended 
- Positive Feedback Count 								                     |Positive Integer documenting the number of other customers who found this review positive
- Division Name 					           |Categorical name of the product high level division
- Department Name 			       |Categorical name of the product department name
- Class Name 							                  |Categorical name of the product class name
- 
+ Row ID  							                   |Integer Categorical variable that refers to the specific piece being reviewed
+ Order ID 					           |Integer Categorical variable that refers to the specific piece being ordered
+ Order Date 		        |Date of the order
+ Ship Date  					               	   	|Shipping date
+ Ship Mode							                	      |Shipping Mode 
+ Customer ID  					                	|Integer Categorical variable that refers to the customer 
+ Customer Name 								                     |Name of the specific customer
+ Segment 					           |Segment through which the order is placed
+ Country 			       |Country at which the order is made from
+ City 							                  |City at which the order is made from
+ State 							                  |State at which the order is made from
+ Postal Code 							                  |Postal code of the place of order
+ Region 							                  |Region at which the order is made from
+ Product ID 							                  |Integer Categorical variable that refers to the specific product being ordered
+ Category 							                  |Category to which the order belongs to
+ Sub-Category 							                  |Sub-category to which the order belongs to
+ Product Name 							                  |Name of the product being ordered
+ Sales 							                  |Price of the product in US dollars
+  
+  
+  
 ## **Data Analysis and Interpretation** 
 
 ### **Exploratory Data Analysis**
