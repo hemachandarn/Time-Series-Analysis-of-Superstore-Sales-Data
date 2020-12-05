@@ -102,7 +102,9 @@ For forecasting `Sales` we chose two approaches
 
 #### **Regression Models**
 
-Regression model is a set of statistical processes for estimating the relationships between a dependent variable (`Sales` in our case) and one or more independent variables (`Segment`, `Country`, `State` etc...).
+Regression model is a set of statistical processes for estimating the relationships between a dependent variable (`Sales` in our case) and one or more independent variables (`Segment`, `Country`, `State` etc.).
+
+**Reason:** We wanted to find out how sales was affect by other factors for the Superstore. Whether it was due to the region, product category or may be due to a group of customers. Forecasting Sales based using regression will give us the extra bit of information which businesses can use for further analysis.  
 
 We have used two types of regression to predict `Sales`. 
 - Linear Regression  
