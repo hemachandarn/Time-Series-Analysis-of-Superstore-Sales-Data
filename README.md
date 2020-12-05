@@ -102,6 +102,12 @@ For forecasting `Sales` we chose two approaches
 
 #### **Regression Models**
 
+Regression model is a set of statistical processes for estimating the relationships between a dependent variable (`Sales` in our case) and one or more independent variables (`Segment`, `Country`, `State` etc...).
+
+We have used two types of regression to predict `Sales`. 
+- Linear Regression  
+- Polynomical Regression
+
 #### **Time Series Models**
 
 
