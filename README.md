@@ -129,9 +129,13 @@ The Seasonal Autoregressive Integrated Moving-Average with Exogenous Regressors 
 
 Prophet is a procedure for forecasting time series data based on an additive model where non-linear trends are fit with yearly, weekly, and daily seasonality, plus holiday effects. The procedure makes use of a decomposable time series model with three main model components: trend, seasonality, and holidays. Similar to a generalized additive model (GAM), with time as a regressor, Prophet fits several linear and non-linear functions of time as components. Modeling seasonality as an additive component is the same approach taken by exponential smoothing… The GAM formulation has the advantage that it decomposes easily and accommodates new components as necessary, for instance when a new source of seasonality is identified. Prophet is “framing the forecasting problem as a curve-fitting exercise” rather than looking explicitly at the time based dependence of each observation.
 
+( A detailed version of the models tuned with their parameters is given in the jupyter notebook)
+
 ## **Model Comparison**
 
+The follow bar plot shows the comparison between our 5 models based on RMSE value. As you can see ARIMA has less RMSE and came out as the top model for the `Sales` forecast.
 
+<img src = "https://github.com/HemachandarN/Time-Series-Analysis-of-Superstore-Sales-Data/blob/main/Images/model_comp.jpeg">
 
 ## **Who might be interested in this data**
 
