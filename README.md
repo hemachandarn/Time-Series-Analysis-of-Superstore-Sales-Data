@@ -151,5 +151,5 @@ Forecasting the sales could offer tremendoud insights of how the store is doing 
 ## **Limitations**
 
 - Analyzing the Impact of Single Events: When you try to assess the impact of a single event, the major problem is that there are always many events occurring at any one time. Suppose you want to find out why sales are peaking  in the March for all the four years. But there are several events happening at the same time. 
-- Missing values need to be filled
-- Past performance is no indication of future results there are numrous factors that might affect the sales of the store. We can't decide the future based on just patterns. The retail market is so dynamic and often affected by new products, promotions, seasonality and other changes that make it very hard to base forward-looking decisions on past behavior. This is the reason why personal experience, local knowledge, and expert judgement are often used as critical inputs to override automated forecasting 
+- Missing values need to be filled.
+- Past performance is no indication of future results there are numrous factors that might affect the sales of the store. We can't decide the future based on just patterns. The retail market is so dynamic and often affected by new products, promotions, seasonality and other changes that make it very hard to base forward-looking decisions on past behavior. This is the reason why personal experience, local knowledge, and expert judgement are often used as critical inputs to override automated forecasting. 
