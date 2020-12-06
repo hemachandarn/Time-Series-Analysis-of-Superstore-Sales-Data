@@ -133,7 +133,7 @@ Prophet is a procedure for forecasting time series data based on an additive mod
 
 ## **Model Comparison**
 
-The follow bar plot shows the comparison between our 5 models based on RMSE value. As you can see ARIMA has less RMSE and came out as the top model for the `Sales` forecast.
+The following bar plot shows the comparison between our 5 models based on RMSE value. As you can see ARIMA has less RMSE and came out as the top model for the `Sales` forecast.
 
 <img src = "https://github.com/HemachandarN/Time-Series-Analysis-of-Superstore-Sales-Data/blob/main/Images/model_comp.jpeg">
 
